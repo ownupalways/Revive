@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Revive</title>
+	<meta charset="utf-8">
+	<!--screen responsivenes-->
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="rev.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<img  class="logo win" src="images/logo.png" alt="logo">
+	<header class="main-header">
+		<div id="power_nav" class="topnav">
+			<a href="index.html" class="active">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">About</button> 
+				<div class="dropdown-content">
+					<a href="#"> Company</a>					
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Service</button> 
+				<div class="dropdown-content">
+					<a href="#"> Web Design</a>
+					<a href="#"> Secretariat Service</a>
+					<a href="#"> Product Delivery Service</a>
+				</div>
+			</div>
+			<a href="Contact">Contact</a>
+			<a href="new">News</a>
+			<a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="adjust()">Menu<span></span>&#9776;</a>
+		</div>
+		<h1 class="header-content">Revive</h1>
+	</header>
+	<div class="all">
+		<div>
+			<div class="chip-profile profile">
+				<img class="profile-img" src="images/g.jpg" alt="Godwin." width="10%" height="10%"><br><br> 
+			</div>
+				<p class="content-pro"><strong>Oluwadipe Godwin J</strong> </p>
+				<p class="content-pro">Web Developer in <strong>HTML, CSS, JavaScript, PHP, Git and GitHub</strong></p>
+		</div><br><br>
+		<div class="row">
+			<div class="column side">
+				<div class="mom0">
+					<div class="packin">
+						<div id="push">
+							<button class="start" align="center">Discover More Within
+							<i class="fa fa-caret-down"></i>
+							</button>
+						</div>
+						<div class="rollout">
+							<a href="#" class="min">Handy</a>
+							<a href="#" class="min">Still to come</a>
+							<a href="#" class="min">Just keep it cool</a>
+							<a href="#" class="min">it is on the way</a>
+							<a href="#" class="min">it is not slow</a>
+							<a href="#" class="min">patience is a...</a>
+							<a href="#" class="min">powerful virtue</a>
+							<a href="#" class="min">not everyone</a>
+							<a href="#" class="min">Possess it</a>
+						</div>
+					</div>
+				</div>
+				<div class="mom1" style="background-color:white;">
+					<h4 style="text-align: left;">Information Plank</h4>
+					<div>Working is good and it goes a long way to tell how serious you ar for success</div>
+				</div>
+
+				<div>
+					<div class="mom" style="text-align: justify; color: white;"><p>No one can measure your Glory and it is in God's hand</p></div>
+				</div>
+			</div>
+			<div class="column middle">
+				<div class="mom2">
+					<h2>Discover More within you, you can do</h2>
+					<h3 id="min">Be A Mentor</h3>
+					<p style="text-align: justify;">The is a site that gives you the opportunity to help people out of their problems.
+					Your success story can go a long way to help others in the same kind of trouble you have gone through and people.
+					This inspiration came to me when i was trying to think of how to affect lives positive throughout the whole world.
+					Social media is not just a place to see people celebrating and one hoping when is he or she going be like one.
+					<b>If you are really successful as we consider you to be, kindly share your Breakthrough story to the world for a BREAKTHOUGH!</b>
+					</p>
+				</div>
+				<div class="major">
+					<a href="file:///C:/Mother/signup.htm" target="_blank" class="waiting"><p >Take Quiz?</p></a>
+				</div>
+				<div class="mom3">
+					<h3 class="modo">Be A Mentor</h3>
+					<p style="text-align: justify;">The is a site that gives you the opportunity to help people out of their problems.
+					Your success story can go a long way to help others in the same kind of trouble you have gone through and people.
+					This inspiration came to me when i was trying to think of how to affect lives positive throughout the whole world.
+					Social media is not just a place to see people celebrating and one hoping when is he or she going be like one.
+					<b>If you are really successful as we consider you to be, kindly share your Breakthrough story to the world for a BREAKTHOUGH!</b>
+					</p>
+				</div>
+			</div>
+			<div class="column side">
+				<div class="mom4">
+					<h2 align="center">Choose a better side</h2>
+					<p class="just">It is always easy to point fingers... 
+					but nobody like to look inwards first before point at others accusation</p>
+				</div>
+				<div class="mom5">
+					
+				</div>
+				<!--The News Updates-->
+				<div id="myModal" class="modal">
+					<!--Sign-up for updates content-->
+					<div class="modal-content">
+						<span class="close" onclick="close()">&times;</span><br>
+						<p>Signup for latest news on your Inverter Management</p>
+						<input type="text" name="email">
+						<button class="tellme">Tell Me</button>
+					</div>	
+				</div>
+				<div class="mom5a">
+					<form action="rev.php" method="POST" name="form">
+						<div id="comment">
+							<p style="font-family: optimusprinceps; font-size:15px; font-weight: bold;" align="center">Leave a comment below</p>
+							<input type="text" name="fname" placeholder="Enter Full Name"><br>
+							<input type="text" name="email" placeholder="Enter your email Address"><br>
+							<textarea name="msg" rows="10" cols="30" placeholder="Tell how you feel about the site and what we should remove and add..."></textarea><br><br>
+							<button id="msgbtn">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><br>
+		<footer class="footer-content">
+			<p>Powered By HB-TUSH Comsat</p>
+		</footer>
+	</div>
+	<script>
+		//fetch the Modal
+		var modal = document.getElementById("myModal");
+		var span = document.getElementsByClassName("close")[0];
+		
+		span.onclick = function() {
+			modal.style.display ="none";
+		}
+		// it will close if user click anywhere on the window
+		window.onclick = function mod(event) {
+			if(event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		function close() {
+			document.getElementByClassName("close").style.transition = " all 20s ease";
+		}
+
+		function adjust() {
+			var x = document.getElementById("power_nav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			}else {
+				x.className = "topnav";
+			}
+		}
+
+		$(function() {
+			var light = $("<div></div>").text("It does not really matter how long it take you to achieve you desire goal. what matter is how despirate are you to achieve it, that can is Enough to keep you going until you can ACHIEVE IT");
+			$(".mom3").after(light);
+		});
+
+		$(function() {
+			$("#push").click(function() {
+				$(".rollout").slideToggle(500);
+			});
+		});
+
+
+	</script>
+</body>
+</html>
