@@ -13,7 +13,7 @@ html, body {
 }
 /*style few font*/
 
-h1, h2, h3, h3, h4, h5, a, .p, .start {
+h1, h2, h3, h3, h4, h5, .p, .start {
 	font-family: optimusprinceps;
 	font-weight: bold;
 }
@@ -29,7 +29,7 @@ h1, h2, h3, h3, h4, h5, a, .p, .start {
 	box-shadow: rgba(4, 2, 4, 0.5);
 }
 .win{
-	margin-top: 10px;
+	margin-top: 18%;
 }
 /*ADDING STYLE AND EFFECT ON ALL TOPNAV ELEMENTS*/
 /*Add color to background of the nav*/
@@ -133,7 +133,7 @@ This class makes the topnav look god on small screen
 	.topnav.responsive {
 		position: absolute;
 		z-index: 1;
-		width: 70%;
+		width: 100%;
 	}
 	.topnav.responsive a.icon {
 		position:absolute;
@@ -148,12 +148,12 @@ This class makes the topnav look god on small screen
 	}
 	.topnav.responsive .dropdown {float:none;}
 	.topnav.responsive .dropdown-content {
-		width: 55%;
+		width: 95%;
 		position:relative;
 	}
 	.topnav.responsive .dropdown .dropbtn {
 		display: block;
-		width: 55%;
+		width: 70%;
 		text-align: left;
 	}
 }
@@ -215,11 +215,31 @@ This class makes the topnav look god on small screen
 	margin-top: 20px;
 }
 .mom3{
-	background-color: lavender;
+	background-color: #bab123;
+	background: rgba(0,0,0,0.5);
 	border:1px solid aqua;
 	border-radius: 4px;
 	padding:20px;
-	margin-top: 20px;
+	margin: 20px 20px;
+}
+.Gallary{
+	background: transparent;
+	font-family: cambria;
+	font-size: 20px;
+	color: white;
+	border: 1px solid blue;
+	width: 170px;
+	padding: 10px;
+	border-radius: 8px;
+	outline: none;
+}
+.Gallary:hover{
+	background: rgb(0,0,0,0.4);
+	background: rgba(0,0,0,0.1);
+	border: 1.5px solid white;
+}
+.gallery-wall{
+	display: none;
 }
 .mom4{
 	background-color: lavender;
@@ -246,10 +266,8 @@ This class makes the topnav look god on small screen
 	width: 100%;
 	font-size: 18px;
 	padding-top: 10px;
-	opacity: 0.9;
 }
 .start:hover, .start:focus {
-	opacity: 1;
 	cursor: pointer;
 	font-size: 25px;
 }
@@ -265,16 +283,36 @@ This class makes the topnav look god on small screen
 	display:block;
 	padding:20px;
 	text-decoration:none;
-	line-height: 0.5;
+	line-height: 1;
 	text-align:none;
 	font-size: 14px;
+	margin: 5px;
 }
 
 .min:hover, .min:focus {
 	background-color: black;
 	color: white;
-	font-size: 22px;
+	font-size: 18px;
 	border-radius: 6px;
+}
+.min-edit{
+	text-align: justify;
+	background: rgb(0,0,0,1);
+	background: rgba(0,0,0,0.4);
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+	display: none;
+}
+.min-btn:hover{
+	cursor: pointer;
+}
+.learnmore{
+	text-decoration: none;
+	color: #dde4c6;
+}
+.learnmore:focus{
+	text-decoration: underline;
+	font-size: 15px;
 }
 .packin {
 	background-color: black;
