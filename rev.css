@@ -179,17 +179,11 @@ This class makes the topnav look god on small screen
 }
 
 /*responsive layout */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px, min-width: 200px) {
 	.column.side, .column.middle {
 		width:100%;
 		overflow-wrap: break-word;
 	}
-	.row:after {
-		content:"";
-		display:table;
-		clear:both;
-	}
-
 }
 
 /*organizing the card with their sizes*/
