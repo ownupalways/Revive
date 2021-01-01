@@ -184,6 +184,11 @@ This class makes the topnav look god on small screen
 		width:100%;
 		overflow-wrap: break-word;
 	}
+	.row:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
 
 }
 
