@@ -180,7 +180,7 @@ This class makes the topnav look god on small screen
 
 /*responsive layout */
 @media screen and (max-width: 600px) {
-	.column.side, .column.middle {
+	.column.side {
 		width:100%;
 		overflow-wrap: break-word;
 	}
