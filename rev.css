@@ -114,7 +114,7 @@ h1, h2, h3, h3, h4, h5, .p, .start {
 /*when the screen is less than 600 pixels wide hide all links,
 for the one ('home'). show the icon kink that contains items 
 should open and close the topnav (.icon)*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
 	.topnav a:not(:first-child), .dropdown .dropbtn {
 		display: none;
 	}
@@ -129,7 +129,7 @@ should open and close the topnav (.icon)*/
 with JavaScript when the user clicks on the icon. 
 This class makes the topnav look god on small screen 
 (displays link vertically) instead of horizontally */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 	.topnav.responsive {
 		position: absolute;
 		z-index: 1;
@@ -179,7 +179,7 @@ This class makes the topnav look god on small screen
 }
 
 /*responsive layout */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	.column.side {
 		width:100%;
 		overflow-wrap: break-word;
@@ -463,7 +463,7 @@ textarea, select{
 	cursor:pointer;
 }
 /*creating responsivenes of the madal box*/
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 1000px) {
 	.modal {
 		width:100%;
 		height: 100%;
@@ -534,7 +534,7 @@ textarea, select{
 	border:2px solid rgb(98, 86, 156);
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 	.chip {
 		width: 100%;
 		overflow-wrap: break-word;
