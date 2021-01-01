@@ -179,7 +179,7 @@ This class makes the topnav look god on small screen
 }
 
 /*responsive layout */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.column.side, .column.middle {
 		width:100%;
 		overflow-wrap: break-word;
@@ -457,14 +457,20 @@ textarea, select{
 	cursor:pointer;
 }
 /*creating responsivenes of the madal box*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
 	.modal {
 		width:100%;
+		height: 100%;
 	}
 	.modal-content {
 		background-color: rgb(1, 5, 7);
-		margin: 50vh 0 0 0;
+		margin: 10px;
 		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -50%);
+		align-items: center;
 		border:1px solid #abc;
 		width: 100%;
 		height: 40%;
