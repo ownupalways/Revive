@@ -23,8 +23,8 @@ h1, h2, h3, h3, h4, h5, .p, .start {
 	position: fixed;
 	z-index: 1;
 	border-radius: 50%;
-	width: 100px;
-	height:100px;
+	width: 50px;
+	height:50px;
 	margin-right: 10px ;
 	box-shadow: rgba(4, 2, 4, 0.5);
 }
@@ -179,7 +179,7 @@ This class makes the topnav look god on small screen
 }
 
 /*responsive layout */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.column.side {
 		width:100%;
 		overflow-wrap: break-word;
@@ -432,11 +432,14 @@ textarea, select{
 .modal-content {
 	background-color: rgb(1, 5, 7);
 	margin: 50vh 0 0 70vh;
-	padding: 20px;
 	border:1px solid #abc;
 	width: 30%;
 	height: 30%;
 	border-radius: 2vh;
+}
+.simple{
+	color: rgb(250, 251, 252);
+	padding: 10px;
 }
 /*stying the close span close button*/
 .close {
@@ -467,8 +470,7 @@ textarea, select{
 	}
 	.modal-content {
 		background-color: rgb(1, 5, 7);
-		margin: 10px;
-		padding: 20px;
+		margin:0;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -476,7 +478,7 @@ textarea, select{
 		align-items: center;
 		border:1px solid #abc;
 		width: 100%;
-		height: 40%;
+		height: 33%;
 		border-radius: 2vh;
 	}
 }
