@@ -463,7 +463,7 @@ textarea, select{
 	cursor:pointer;
 }
 /*creating responsivenes of the madal box*/
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 800px) {
 	.modal {
 		width:100%;
 		height: 100%;
