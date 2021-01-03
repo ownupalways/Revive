@@ -188,6 +188,13 @@ This class makes the topnav look god on small screen
 		width:100%;
 		overflow-wrap: break-word;
 	}
+	
+	.gallery-wall{
+		content: "";
+		clear:both;
+		display: inline;
+		margin-top: 20px;
+	}
 }
 
 /*organizing the card with their sizes*/
@@ -221,8 +228,8 @@ This class makes the topnav look god on small screen
 	background: rgba(0,0,0,0.5);
 	border:1px solid aqua;
 	border-radius: 4px;
-	padding:20px;
-	margin: 20px 20px;
+	padding:10px;
+	margin-top: 20px;
 }
 .Gallary{
 	background: transparent;
@@ -242,6 +249,7 @@ This class makes the topnav look god on small screen
 }
 .gallery-wall{
 	display: none;
+	margin-top: 10px;
 }
 .mom4{
 	background-color: lavender;
