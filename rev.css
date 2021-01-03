@@ -34,12 +34,9 @@ h1, h2, h3, h3, h4, h5, .p, .start {
 /*ADDING STYLE AND EFFECT ON ALL TOPNAV ELEMENTS*/
 /*Add color to background of the nav*/
 .topnav {
-	position: absolute;
 	margin-top: 10px;
 	overflow:hidden;
-	background-color:#abc;
 	background-color: rgba(0,0,0,0.9);
-	z-index: 1;
 }
 /*styling the links inside the navigation bar*/
 .topnav a {
@@ -49,16 +46,21 @@ h1, h2, h3, h3, h4, h5, .p, .start {
 	padding:14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+	border: none;
+	outline: none;
+	font-family: optimusprinceps;
+	font-weight: bold;
+	margin: 0;
 }
 
 .topnav> a:not(:first-child){
-	color: white;
+	color: rgb(5, 5, 5);
+
 }
 /*Add an active class to highlight the current page*/
 .active{
-	background-color: #FAF;
-	background-color: rgba(0,0,0,0.2);
-	color:white;
+	background-color:whitesmoke;
+	color:black;
 	font-weight: bold;
 }
 
@@ -113,12 +115,23 @@ h1, h2, h3, h3, h4, h5, .p, .start {
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+.menubars{
+	font-size: 17px;
+}
 /*when the screen is less than 600 pixels wide hide all links,
 for the one ('home'). show the icon kink that contains items 
 should open and close the topnav (.icon)*/
 @media screen and (max-width: 800px) {
 	.topnav a:not(:first-child), .dropdown .dropbtn {
 		display: none;
+	}
+
+	.active{
+		background-color:whitesmoke;
+		color:black;
+		font-weight: bold;
+		width: 80px;
+		height: 52px;
 	}
 	.topnav a.icon {
 		float: right;
@@ -150,12 +163,12 @@ This class makes the topnav look good on small screen
 	}
 	.topnav.responsive .dropdown {float:none;}
 	.topnav.responsive .dropdown-content {
-		width: 95%;
+		width: 100%;
 		position:relative;
 	}
 	.topnav.responsive .dropdown .dropbtn {
 		display: block;
-		width: 70%;
+		width: 100%;
 		text-align: left;
 	}
 }
