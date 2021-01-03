@@ -34,10 +34,12 @@ h1, h2, h3, h3, h4, h5, .p, .start {
 /*ADDING STYLE AND EFFECT ON ALL TOPNAV ELEMENTS*/
 /*Add color to background of the nav*/
 .topnav {
+	position: absolute;
 	margin-top: 10px;
 	overflow:hidden;
 	background-color:#abc;
 	background-color: rgba(0,0,0,0.9);
+	z-index: 1;
 }
 /*styling the links inside the navigation bar*/
 .topnav a {
@@ -127,7 +129,7 @@ should open and close the topnav (.icon)*/
 
 /*The "responsive" class is added to the topnav 
 with JavaScript when the user clicks on the icon. 
-This class makes the topnav look god on small screen 
+This class makes the topnav look good on small screen 
 (displays link vertically) instead of horizontally */
 @media screen and (max-width: 800px) {
 	.topnav.responsive {
