@@ -129,7 +129,7 @@ should open and close the topnav (.icon)*/
 with JavaScript when the user clicks on the icon. 
 This class makes the topnav look god on small screen 
 (displays link vertically) instead of horizontally */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 800px) {
 	.topnav.responsive {
 		position: absolute;
 		z-index: 1;
