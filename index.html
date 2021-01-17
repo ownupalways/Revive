@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Redressed|Playfair Display SC|Marcellus|Allura">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="rev.js" async></script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -26,7 +28,7 @@
 					<a href="#"> Product Delivery Service</a>
 				</div>
 			</div>
-			<a href="Contact" style="color: white;" class="menu-list">Contact</a>
+			<a href="contact.html" style="color: white;" class="menu-list">Contact</a>
 			<a href="new" style="color: white;" class="menu-list">News</a>
 			<a href="javascript:void(0);" style="font-size: 20px; margin-left: 5px;" class="icon" onclick="adjust()"><span class="menubars">&#9776;</span> Menu</a>
 		</div>
@@ -161,50 +163,46 @@
 	</div>
 	<script>
 		//fetch the Modal
-		var modal = document.getElementById("myModal");
-		var span = document.getElementsByClassName("close")[0];
-		
-		span.onclick = function() {
-			modal.style.display ="none";
-		}
-		// it will close if user click anywhere on the window
-		window.onclick = function(event) {
-			if(event.target == modal) {
-				modal.style.display = "none";
-			}
-		};
-		
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+	modal.style.display ="none";
+}
+// it will close if user click anywhere on the window
+window.onclick = function(event) {
+	if(event.target == modal) {
+		modal.style.display = "none";
+	}
+};
+function adjust() {
+	var x = document.getElementById("power_nav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	}else {
+		x.className = "topnav";
+	}
+}
 
-		function adjust() {
-			var x = document.getElementById("power_nav");
-			if (x.className === "topnav") {
-				x.className += " responsive";
-			}else {
-				x.className = "topnav";
-			}
-		}
+$(function() {
+	var light = $("<div></div>").text("It does not really matter how long it takes you to achieve you desire goal. what matter is how despirate are you towards achieving it. That enough can to keep you going until you ACHIEVE IT!");
+	$(".mom3").after(light);
+});
 
-		$(function() {
-			var light = $("<div></div>").text("It does not really matter how long it takes you to achieve you desire goal. what matter is how despirate are you towards achieving it. That enough can to keep you going until you ACHIEVE IT!");
-			$(".mom3").after(light);
-		});
-
-		$(function() {
-			$("#push").click(function() {
-				$(".rollout").slideToggle(500);
-			});
-		});
-		$(function() {
-			$(".Gallary").click(function() {
-				$(".gallery-wall").slideToggle(600);
-			});
-		});
-		$(function() {
-			$(".min-btn").click(function(){
-				$(".min-content").slideToggle(400);
-			});
-		});
-
+$(function() {
+	$("#push").click(function() {
+		$(".rollout").slideToggle(500);
+	});
+});
+$(function() {
+	$(".Gallary").click(function() {
+		$(".gallery-wall").slideToggle(600);
+	});
+});
+$(function() {
+	$(".min-btn").click(function(){
+		$(".min-content").slideToggle(400);
+	});
+});
 	</script>
 </body>
 </html>
