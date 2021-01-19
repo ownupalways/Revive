@@ -6,12 +6,12 @@
 	<meta charset="utf-8">
 	<!--screen responsivenes-->
 	<link rel="stylesheet" href="rev.css">
+	<script src="rev.js" async></script> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Redressed|Playfair Display SC|Marcellus|Allura">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="rev.js" async></script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -25,12 +25,12 @@
 				<div class="dropdown-content">
 					<a href="#"> Web Design</a>
 					<a href="#"> Secretariat Service</a>
-					<a href="#"> Product Delivery Service</a>
+					<a href="#">  Service Delivery</a>
 				</div>
 			</div>
 			<a href="contact.html" style="color: white;" class="menu-list">Contact</a>
 			<a href="new" style="color: white;" class="menu-list">News</a>
-			<a href="javascript:void(0);" style="font-size: 20px; margin-left: 5px;" class="icon" onclick="adjust()"><span class="menubars">&#9776;</span> Menu</a>
+			<a href="javascript:void(0);" class="icon" onclick="adjust()"><span class="menubars">&#9776;</span> Menu</a>
 		</div>
 		<h1 class="header-content" style="font-family: Sofia, sans-serif;">Revive</h1>
 	</header>
@@ -46,7 +46,7 @@
 			<div class="column side">
 				<div class="mom0">
 					<div class="packin">
-						<button class="start" id="push" align="center">Discover More Within
+						<button class="start" id="push">Discover More Within
 						</button>
 						<div class="rollout">
 							<a class="min min-btn">Make More Cash</a>
@@ -87,7 +87,7 @@
 				</div>
 
 				<div>
-					<div class="mom" style="text-align: justify; color: white; font-family: Allura; font-size: 25px;"><p>No one can measure your Glory and it is in God's hand</p></div>
+					<div class="mom" style="text-align: justify; color: white; font-family: Allura; font-size: 25px;"><p>No one can measure your Glory because it is in God's hand</p></div>
 				</div>
 			</div>
 			<div class="column middle">
@@ -106,11 +106,11 @@
 				</div>
 				<div class="mom3">
 					<h3 class="modo">Art is Beauty</h3>
-					<p style="text-align: justify; font-family: Marcellus">In the world of creativity 'ART' is one of the outstanding initiative that communication to the heart of man.<br>
-					For me, it is the dynamism of God's handy-work, for others, it could be the beauty of nature. But all-in-all, Life without Art is void. <br>
-					Patronize us today and let us give creativity in art to your world. 
+					<p style="text-align: justify; font-family: Marcellus">In the world of creativity 'ART' is one of the outstanding initiative that communicates to the heart of man.<br>
+					For me, it is the dynamism of God's handy-work, for others, it could be the beauty of nature. But all-in-all, Life without Art is also void of beauty. <br>
+					Patronize us today and let us give creativity in art to your world.</p> 
 					<div class="inside-gallery">
-						<button class="Gallary">See our Gallary</button><br><br>
+						<button class="Gallary">See our Gallery</button><br><br>
 						<div class="gallery-wall">
 							<img src="images/pen1.png" width= "100" alt="picture">
 							<img src="images/pen2.png" width="100" alt="picture">
@@ -120,12 +120,16 @@
 							<img src="images/pen6.jpg" width="100" alt="picture">
 						</div>
 					</div>
-					</p>
+					<div class="contact-links">
+						<p class="email"><i class="fa fa-envelope-o"></i> tomiwaesther1@gmail.com</p>
+						<a href="https://wa.me/whatsapp.com/dl/08026470304" class="box"><i class="fa fa-whatsapp"></i></a>
+						<a href="https://web.facebook.com/tomiwa.esther1" class="box"><i class="fa fa-facebook"></i></a>
+					</div>
 				</div>
 			</div>
 			<div class="column side">
 				<div class="mom4">
-					<h2 align="center">Choose a better side</h2>
+					<h2 style="text-align: center;">Choose a better side</h2>
 					<p class="just" style="font-family: Marcellus">It is always easy to point fingers... 
 					but nobody likes to look inwards first before pointing at others accusation finger</p>
 				</div>
@@ -147,7 +151,7 @@
 				<div class="mom5a">
 					<form action="rev.php" method="POST" name="form">
 						<div id="comment">
-							<p style="font-family: optimusprinceps; font-size:15px; font-weight: bold;" align="center">Leave a comment below</p>
+							<p style="font-family: optimusprinceps; font-size:15px; font-weight: bold; text-align: center;" >Leave a comment below</p>
 							<input type="text" name="fname" placeholder="Enter Full Name"><br>
 							<input type="text" name="email" placeholder="Enter your email Address"><br>
 							<textarea name="msg" rows="10" cols="30" placeholder="Tell how you feel about the site and what we should remove and add..."></textarea><br><br>
@@ -162,47 +166,19 @@
 		</footer>
 	</div>
 	<script>
-		//fetch the Modal
-var modal = document.getElementById("myModal");
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-	modal.style.display ="none";
-}
-// it will close if user click anywhere on the window
-window.onclick = function(event) {
-	if(event.target == modal) {
-		modal.style.display = "none";
-	}
-};
-function adjust() {
-	var x = document.getElementById("power_nav");
-	if (x.className === "topnav") {
-		x.className += " responsive";
-	}else {
-		x.className = "topnav";
-	}
-}
+		//fetch modal from tag
+		var modal = document.getElementById("myModal");
+		var span = document.getElementsByClassName("close")[0];
 
-$(function() {
-	var light = $("<div></div>").text("It does not really matter how long it takes you to achieve you desire goal. what matter is how despirate are you towards achieving it. That enough can to keep you going until you ACHIEVE IT!");
-	$(".mom3").after(light);
-});
-
-$(function() {
-	$("#push").click(function() {
-		$(".rollout").slideToggle(500);
-	});
-});
-$(function() {
-	$(".Gallary").click(function() {
-		$(".gallery-wall").slideToggle(600);
-	});
-});
-$(function() {
-	$(".min-btn").click(function(){
-		$(".min-content").slideToggle(400);
-	});
-});
+		span.onclick = () => {
+			modal.style.display ="none";
+			};
+		// it will close if user click anywhere on the window
+		window.onclick = (event) =>{
+			if(event.target == modal) {
+			modal.style.display = "none";
+			};
+		};
 	</script>
 </body>
 </html>
