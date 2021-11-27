@@ -9,11 +9,6 @@ function adjust() {
 
 
 $(() => {
-        var light = $("<div></div>").text("It does not really matter how long it takes you to achieve you desire goal. what matter is how despirate are you towards achieving it. That enough can to keep you going until you ACHIEVE IT!");
-        $(".mom3").after(light);
-    });
-
-$(() => {
         $("#push").click(() => {
                 $(".rollout").slideToggle(500);
             });
