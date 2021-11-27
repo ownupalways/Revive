@@ -385,22 +385,6 @@ button .fa-caret-down:hover{
 	border-radius: 5px;
 	border:1px solid grey;
 }
-.major{
-	background-color: lavender;
-	padding: 20px;
-	margin-top:20px;
-	line-height:1;
-	box-shadow:0 5px 5px 5px;
-	border-radius:4px;
-	text-align:center;
-	position:relative;
-}
-.major:hover {
-	color:green;
-	font-weight:bolder;
-	cursor:pointer;
-	font-size:70px;
-}
 
 /*styling the footer*/
 .footer-content {
