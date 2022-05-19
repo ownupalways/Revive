@@ -1,0 +1,687 @@
+*{
+	box-sizing: border-box;
+}
+html, body {
+	margin:0;
+	padding: 0;
+	user-select: none;
+}
+/*background properties*/
+.all {
+	background-color: #B0C4DE;
+	background-size:cover;
+	background-position: center center;
+	margin:0; 
+}
+/*style few font*/
+
+h1, h2, h3, h3, h4, h5, .p, .start {
+	font-family: Redressed;
+	font-weight: bold;
+}
+.logo{
+	right: 0;
+	float: right;
+	position: fixed;
+	z-index: 1;
+	border-radius: 50%;
+	width: 50px;
+	height:50px;
+	margin-right: 10px ;
+	box-shadow: rgba(4, 2, 4, 0.5);
+}
+.win{
+	margin-top: 18%;
+}
+/*ADDING STYLE AND EFFECT ON ALL TOPNAV ELEMENTS*/
+/*Add color to background of the nav*/
+.topnav {
+	margin-top: 10px;
+	overflow:hidden;
+	background-color: rgba(0,0,0,0.9);
+}
+/*styling the links inside the navigation bar*/
+.topnav a {
+	float:left;
+	display: block;
+	text-align: center;
+	padding:14px 16px;
+	text-decoration: none;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	font-family: Playfair Display SC;
+	font-weight: bold;
+	margin: 0;
+}
+
+.menu-list{
+	font-family: 'Marcellus', serif;
+}
+
+.topnav> a:not(:first-child){
+	color: rgb(5, 5, 5);
+
+}
+/*Add an active class to highlight the current page*/
+.active{
+	background-color:whitesmoke;
+	color:black;
+	font-weight: bold;
+	font-family: Marcellus;
+}
+
+/*Hide/icon the link that should open and close the topnav on small screens*/
+.topnav .icon{
+	display: none;
+	font-size: 20px; 
+	margin-left: 5px;
+}
+/*positioning the dropdown-content through the dropdown container -*/
+.dropdown {
+	float:left;
+	overflow: hidden;
+}
+/*styling the dropdown button to fit inside the topnav*/
+.dropdown .dropbtn {
+	font-size: 15px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: Playfair Display SC;
+	font-weight: bold;
+	margin: 0;
+}
+/*styling the dropdown content here (hidden by default)*/
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+/*style the link inside the dropdown*/
+.dropdown-content a {
+	float: none;
+	padding: 12px 16px;
+	font-size: 12px;
+	font-family: unset;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	color:black;
+}
+
+/*Add a background-color on hover dropdown links*/
+.topnav a:hover, .dropdown:hover .dropbtn {
+	background-color: #555;
+}
+/*add different color to the dropdown links on hover*/
+
+/*show the dropdown menu when the user moves the mouse over the dropdown button*/
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.menubars{
+	font-size: 17px;
+}
+/*when the screen is less than 600 pixels wide hide all links,
+for the one ('home'). show the icon kink that contains items 
+should open and close the topnav (.icon)*/
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child), .dropdown .dropbtn {
+		display: none;
+	}
+
+	.active{
+		background-color:whitesmoke;
+		color:black;
+		font-weight: bold;
+		width: 80px;
+		height: 52px;
+	}
+	.topnav a.icon {
+		float: right;
+		display: block;
+		color:white;
+	}
+}
+
+/*The "responsive" class is added to the topnav 
+with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screen 
+(displays link vertically) instead of horizontally */
+@media screen and (max-width: 600px) {
+	.topnav.responsive {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+	}
+	.topnav.responsive a.icon {
+		position:absolute;
+		right:0;
+		top:0;
+	}
+	.topnav.responsive a {
+		float: none;
+		position: relative;
+		display: block;
+		text-align: left;
+	}
+	.topnav.responsive .dropdown {float:none;}
+	.topnav.responsive .dropdown-content {
+		width: 100%;
+		position:relative;
+	}
+	.topnav.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+
+/*PAGE PARTITIONING WITH STYLE*/
+/*Establishing the layout with their partion*/
+.row:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+.column {
+	float:left;
+	padding:10px;
+}
+
+.column.side {
+	width: 25%;
+}
+
+.column.middle {
+	width:50%;
+}
+
+/*responsive layout */
+@media screen and (max-width: 600px) {
+	.column{
+		width: 100%;
+	}
+	.column.side {
+		width:100%;
+		overflow-wrap: break-word;
+		margin-right: 15px;
+	}
+	.side {
+		width:100%;
+		overflow-wrap: break-word;
+		margin-right: 15px;
+	}
+	.column.middle {
+		width:100%;
+		overflow-wrap: break-word;
+	}
+	
+	.gallery-wall{
+		content: "";
+		clear:both;
+		display: inline;
+		margin-top: 20px;
+	}
+}
+
+/*organizing the card with their sizes*/
+.mom{
+	background-color:#9932CC;
+	padding:20px;
+	margin-top: 20px;
+	border:8px solid white;
+	border-radius: 4px
+}
+.mom0{
+	background-color:white;
+	padding:20px;
+	margin-top: 20px;
+}
+ 
+.mom1{
+	background-color:white;
+	padding:20px;
+	margin-top: 20px;
+}
+.mom2{
+	background-color: black;
+	color: white;
+	border-radius: 4px;
+	padding:20px;
+	margin-top: 20px;
+}
+.mom3{
+	background-color: #bab123;
+	background: rgba(0,0,0,0.5);
+	border:1px solid aqua;
+	border-radius: 4px;
+	padding:10px;
+	margin-top: 20px;
+}
+.Gallary{
+	background: transparent;
+	font-family: cambria;
+	font-size: 20px;
+	color: white;
+	border: 1px solid blue;
+	width: 170px;
+	padding: 10px;
+	border-radius: 8px;
+	outline: none;
+}
+.Gallary:hover{
+	background: rgb(0,0,0,0.4);
+	background: rgba(0,0,0,0.1);
+	border: 1.5px solid white;
+}
+.gallery-wall{
+	display: none;
+	margin-top: 10px;
+}
+.mom4{
+	background-color: lavender;
+	border:1px solid aqua;
+	border-radius: 4px;
+	padding:20px;
+	margin-top: 20px;
+}
+.mom5{
+	background:white;
+	padding:20px;
+	margin-top: 20px;
+	border-radius: 4px;
+}
+.mom5a{
+	background-color: white;
+	padding: 30px;
+	margin-top: 20px;
+}
+/*styling the side navigation button*/
+.start {
+	background-color: black;
+	color: white;
+	width: 100%;
+	font-size: 18px;
+	padding-top: 10px;
+	text-align: center;
+}
+.start:hover, .start:focus {
+	cursor: pointer;
+	font-size: 25px;
+}
+/*styling side navigation link*/
+.rollout{
+	display: none;
+	position: relative;
+	background-color: white;
+}
+.min {
+	line-height:0;
+	color: black;
+	display:block;
+	padding:20px;
+	text-decoration:none;
+	line-height: 1;
+	text-align:none;
+	font-size: 14px;
+	margin: 5px;
+}
+
+.min:hover, .min:focus {
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	border-radius: 6px;
+}
+.min-edit{
+	text-align: justify;
+	background: rgb(0,0,0,1);
+	background: rgba(0,0,0,0.4);
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+	display: none;
+}
+.min-btn:hover{
+	cursor: pointer;
+}
+.learnmore{
+	text-decoration: none;
+	color: #dde4c6;
+}
+.learnmore:focus{
+	text-decoration: underline;
+	font-size: 15px;
+}
+.packin {
+	background-color: black;
+}
+/*styling the down button on discover more within*/
+.fa-caret-down {
+	float:right;
+	position: relative;
+}
+button .fa-caret-down:hover{
+	cursor: pointer;
+	color: green;
+}
+
+
+/*styling the leave a comment button*/
+#msgbtn{
+	float:right; 
+	font-weight:bolder; 
+	font-family: optimusprinceps;
+	font-size: 18px; 
+	color:white; 
+	background-color: #db7093;
+	border-radius: 5px;
+	border:1px solid grey;
+}
+
+/*styling the footer*/
+.footer-content {
+	text-align: right;
+	padding: 5px 10px 30px 0px;
+	background-color: darkorchid;
+	color: white;
+	font-family: algeria;
+	height: 50px;
+	position: relative;
+}
+
+/*styling the comment input form*/
+input[type=text], select{
+	width: 100%;
+	padding:12px 20px;
+	margin:8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius:4px;
+	box-sizing: border-box;;
+}
+
+/*styling the textarea for comment*/
+textarea, select{
+	border-style: dotted; 
+	border: 1px solid #DB7093; 
+	border-radius: 6px;
+	width: 100%;
+	height: 90%;
+	resize: none;
+	box-sizing: border-box;
+}
+
+/*Modal box properties*/
+/*styling the modal container*/
+.modal {
+	position: fixed;
+	z-index: 1;
+	right: 0;
+	bottom: 20px;
+	width: 100%;
+	height: 100%;
+	overflow: break-word;
+	background-color: hotpink;
+	background-color: rgba(161, 172, 192, 0.5);
+	color: white;
+	padding-left: 20px;
+	border-radius: 8px;
+	line-height: 0.9;
+	transition: show 10s;
+	
+}
+/*styling the content box*/
+.modal-content {
+	background-color: rgb(1, 5, 7);
+	margin: 50vh 0 0 70vh;
+	border:1px solid #abc;
+	width: 30%;
+	height: 30%;
+	border-radius: 2vh;
+}
+.simple{
+	color: rgb(250, 251, 252);
+	padding: 10px;
+}
+/*styling the close span close button*/
+.close {
+	color:aqua;
+	float:right;
+	width: 35px;
+	text-decoration: none;
+	text-align: center;
+	top:0;
+	right:0;
+	padding:0px;
+	border-radius: 0px 9px 0px 0px;
+	font-size:30px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color:white;
+	background-color: red;
+	text-decoration:none;
+	cursor:pointer;
+}
+/*creating responsiveness of the modal box*/
+@media screen and (max-width: 600px) {
+	.modal {
+		width:100%;
+		height: 100%;
+	}
+	.modal-content {
+		background-color: rgb(1, 5, 7);
+		margin:0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -50%);
+		align-items: center;
+		border:1px solid #abc;
+		width: 100%;
+		height: 33%;
+		border-radius: 2vh;
+	}
+}
+@media screen and (max-width: 300px) {
+	.modal-content {
+		background-color: rgb(1, 5, 7);
+		margin:0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -50%);
+		align-items: center;
+		border:1px solid #abc;
+		width: auto 0;
+		height:50%;
+		border-radius: 2vh;
+	}
+}
+/*Modal box button*/
+.tellme {
+	background-color: purple;
+	color: white;
+	font-family: bell Mt;
+	font-weight: 15px;
+	padding: 5px;
+	width:60px;
+	border-radius: 4px;
+	padding-bottom: 5px;
+}
+/*Take Quiz styling*/
+.waiting {
+	text-decoration: none;
+}
+.main-header{
+	padding-top: 20px;
+	margin-top: 0;
+	background-color: whitesmoke;
+	background-image:url(images/rev3.jpg);
+	background-blend-mode: multiply;
+	background-size: cover;
+	padding-bottom: 40px;
+	margin: 0;
+}
+.header-content{
+	text-align: center;
+	color: whitesmoke;
+	font-weight: bolder;
+	font-size: 30px;
+	padding-bottom: 0px;
+	margin-top: 50px;
+}
+.head-content{
+	text-align: center;
+	font-size: 30px;
+}
+/*floating chip contact for developer*/
+.profile-content{
+	margin: 0;
+}
+.content-pro {
+	margin-left: 10px;
+}
+.profile-img {
+	float: left;
+	margin: 15px;
+	width: 100px;
+	border-radius: 50%;
+	border:2px solid rgb(98, 86, 156);
+
+}
+.contact-img{
+	border-radius: 20px 20px 0 0;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	-ms-border-radius: 20px 20px 0 0;
+	-o-border-radius: 20px 20px 0 0;
+}
+.contact-item{
+	display: inline-block;
+	width: 400px;
+	background-color: rgb(27, 15, 15);
+	color: rgb(249, 250, 250);
+	margin-left: 100px;
+	border-radius: 20px ;
+	-webkit-border-radius: 20px ;
+	-moz-border-radius: 20px ;
+	-ms-border-radius: 20px ;
+	-o-border-radius: 20px ;
+}
+.contact-name{
+	padding: 15px;
+}
+
+.ceo-speech{
+	background-color: rgb(27, 15, 15);
+	border-radius: 4px;
+	margin-top: 170px;
+	padding-bottom: 15px;
+}
+
+.contact-text{
+	color:white;
+	line-height: 1.5;
+	padding-left: 10px;
+	text-align: justify;
+}
+.status, .name{
+	text-align: center;
+}
+.speech{
+	margin-left: 10px;
+}
+.ceo-speech .contact-links{
+	line-height: .5;
+}
+.contact-links{
+	color: white;
+	padding-left: 20px;
+}
+.box{
+	padding-left: 20px;
+	font-size: 40px;
+}
+.contact-text{
+	color: rgb(249, 250, 250);
+	line-height: 1.5;
+	padding: 20px;
+	text-align: justify;
+}
+@media screen and (max-width: 600px){
+	.contact-item{
+		width: 100%;
+		margin-left: 15px;
+		background-color: rgb(27, 15, 15);
+		color: rgb(249, 250, 250);
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-ms-border-radius: 20px;
+		-o-border-radius: 20px;
+}
+	.contact-name{
+		padding-right:10px;
+	}
+	.status, .name{
+		text-align: center;
+	}
+	.ceo-speech{
+		background-color: rgb(27, 15, 15);
+		box-shadow:0px 4px 10px 0px rgba(242, 246, 247, 0.2);
+		border-radius: 4px;
+		padding-bottom: 15px;
+		width: 100%;
+	}
+	.contact-text{
+		color: rgb(249, 250, 250);
+		line-height: 1.5;
+		padding: 10px;
+		text-align: justify;
+	}
+	.speech{
+		margin-left: 10px;
+	}
+	.box{
+		padding-left: 15px;
+		font-size: 40px;
+		align-items: center;
+	}
+	a.box{
+		margin-left:65px;
+	}
+	.email{
+		text-align: center;
+	}
+	.contact-links{
+		width: 100%;
+		color: white;
+		padding-left: 10px;
+		display: flex;
+	}
+}
+
+.fa-whatsapp{
+	color:white;
+	font-size: 80px;
+}
+.fa-facebook{
+	color: white;
+}
+@media screen and (max-width: 600px) {
+	.chip {
+		width: 100%;
+		overflow-wrap: break-word;
+		line-height: 0.5;
+	}
+}
