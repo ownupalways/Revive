@@ -10,6 +10,9 @@ app.listen(PORT, () => {
     console.log('Server starting on PORT,', 4040);
 });
 
+app.set('views engine', 'ejs')
+app.use(express.static('public'))
+
 app.use(express.urlencoded({extended:false}));
 
 app.use(express.json());
